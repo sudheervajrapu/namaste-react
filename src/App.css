@@ -24,7 +24,6 @@ body {
 .restro-logo {
   padding: 10px;
   height: 8vmin;
-  pointer-events: none;
 }
 
 nav ul {
@@ -40,6 +39,7 @@ nav ul li {
 
 nav ul li:hover {
   color: #fc8019;
+  transition: all 0.3s ease-in-out;
 }
 
 a {
@@ -67,19 +67,19 @@ a {
 .search-input {
   margin: 3px;
   padding: 10px;
-  color: #282c34;
+  color: #282c3f;
   font-size: calc(10px + 1vmin);
   border-radius: 3px;
-  background: azure;
+  background: #f7dbc5;
   border: 1px solid #fc8019;
 }
 
 .search,
 .filter {
   margin: 3px;
-  color: #282c34;
+  color: #282c3f;
   background: #fc8019;
-  border: 1px solid #282c34;
+  border: 1px solid #282c3f;
   font-size: calc(10px + 1vmin);
   border-radius: 3px;
   padding: 10px;
@@ -93,7 +93,7 @@ a {
 
 .restro-card {
   width: 335px;
-  /* height: 480px; */
+  height: 450px;
   padding: 10px;
   margin: 10px;
   color: #02060ceb;
@@ -110,12 +110,20 @@ a {
 
 .restro-card:hover {
   cursor: pointer;
-  border: 2px solid #282c34;
-  transition: margin-right 0.5s ease-in-out;
+  border: 2px solid #282c3f;
+  transition: all 0.3s ease-in-out;
 }
 
 #error-page {
   height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#network-status {
+  height: 80dvh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -140,16 +148,16 @@ a {
   height: 40px;
   margin: 10px;
   border-radius: 3px;
-  background: azure;
-  border: 1px solid #a2d6e4;
-  opacity: 0.5;
+  background: #f7eae1;
+  border: 1px solid #eea971;
+  opacity: 0.3;
 }
 
 .shimmer-btn {
   width: 125px;
   height: 40px;
   margin: 10px;
-  background: azure;
+  background: #f7eae1;
   border: 0.5px solid #9a9ca0;
   border-radius: 3px;
   opacity: 0.5;
@@ -161,16 +169,16 @@ a {
   padding: 10px;
   margin: 10px;
   border-radius: 5px;
-  border: 1px solid #a2d6e4;
-  background: azure;
+  background: #f7eae1;
+  border: 1px solid #eea971;
   opacity: 0.5;
 }
 
 .shimmer-image {
   width: 100%;
   height: 200px;
-  border: 1px solid #a2d6e4;
-  border-radius: 3px;
+  border: 1px solid #eea971;
+  border-radius: 5px;
   opacity: 0.5;
 }
 
@@ -178,16 +186,14 @@ a {
   width: 250px;
   height: 20px;
   opacity: 0.5;
-  background: #8dd4e8;
-  border: 1px dashed 383d48;
+  background: #f8bf91;
 }
 
 .shimmer-content {
   width: 200px;
   height: 20px;
   opacity: 0.3;
-  background: #8dd4e8;
-  border: 1px dashed 383d48;
+  background: #f5c59d;
 }
 
 .app-link {
@@ -195,10 +201,10 @@ a {
 }
 
 label {
-  border: 1px solid #282c34;
+  border: 1px solid #282c3f;
   border-radius: 3px;
   margin: 10px;
   padding: 5px;
-  background-color: #282c34;
+  background-color: #282c3f;
   color: #fc8019;
 }

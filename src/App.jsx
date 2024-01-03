@@ -1,20 +1,13 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import "./App.css";
 import RestroHeader from "./components/RestroHeader";
 import RestroBody from "./components/RestroBody";
+// import "./App.css";
+import { Outlet } from "react-router-dom";
 
 export default function App() {
   return (
     <div className="app">
       <RestroHeader />
-      <RestroBody />
+      <Outlet />
     </div>
   );
 }
-
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
